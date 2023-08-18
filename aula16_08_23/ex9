@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+ 
+    float valorgasto, valortotal, gorjeta;
+ 
+    printf("Qual o valor gasto?");
+    scanf("%f", &valorgasto);
+    
+    gorjeta = valorgasto * 0.10;
+    
+    valortotal = valorgasto + gorjeta;
+    
+    printf("O valor da gorjeta é de: %.2f", gorjeta);
+    printf("\nO valor total é de: %.2f", valortotal);
+
+    return 0;
+}
