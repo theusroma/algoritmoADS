@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    float vendidos, vendas, salario;
+    
+    printf("Quantos sapatos o vendedor vendeu?");
+    scanf("%f", &vendidos);
+    
+    printf("Quais foram as vendas do mês?");
+    scanf("%f", &vendas);
+    
+    vendidos = (vendidos * 5);
+    salario = (vendidos + vendas * 0.20);
+    
+    printf("O salário do vendedor neste mês é de: R$:%.2f", salario);
+    
+    
+
+    return 0;
+}
