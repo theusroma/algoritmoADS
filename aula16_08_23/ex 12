@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    
+    float num1, num2, num3;
+    
+    printf("Digite o primeiro número:");
+    scanf("%f", &num1);
+    printf("Digite o segundo número:");
+    scanf("%f", &num2);
+    
+    num1 = num2;
+    
+    num2 = num3;
+    
+    printf("O valor do primeiro número é %.2f", num1);
+    printf("O valor do segundo número é %.2f", num3);
+    
+
+    return 0;
+}
