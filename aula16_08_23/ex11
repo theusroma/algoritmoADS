@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    float brancos, nulos, validos, percentual;
+    
+    printf("Quantos votos brancos?");
+    scanf("%f", &brancos);
+    
+    brancos = (brancos / 100);
+    
+     printf("Quantos votos válidos?");
+    scanf("%f", &validos);
+    
+    validos = (validos / 100);
+    
+     printf("Quantos votos nulos?");
+    scanf("%f", &nulos);
+    
+    nulos = (nulos / 100);
+    
+    printf("O percentual é:%.1f", validos);    
+    printf("O percentual é:%.1f", brancos);
+    printf("O percentual é:%.1f", nulos);
+
+    return 0;
+}
