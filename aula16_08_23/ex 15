@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    float seis, duze, dois, total;
+
+    printf("Digite quantas latas de 200ml foram compradas?");
+    scanf("%f", &duze);
+    duze = duze * 0.2;
+    
+    printf("Digite quantas latas de 600ml foram compradas?");
+    scanf("%f", &seis);
+    seis = seis * 0.6;
+    
+    printf("Digite quantas garrafas de 2L foram compradas?");
+    scanf("%f", &dois);
+    dois = dois * 2;
+
+    total = dois + seis + duze;
+    
+    printf("Foram comprados: %.1f", total);
+    
+    return 0;
+}
