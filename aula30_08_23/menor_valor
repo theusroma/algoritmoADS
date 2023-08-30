@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+	
+	int num, menor;
+	
+	printf("Informe primeiro numero: ");
+	scanf("%d", &num);
+	
+	menor = num;
+	
+	printf("Informe segundo numero: ");
+	scanf("%d", &num);
+	
+	if (num < menor){
+		menor = num;
+	}
+	
+	printf("Informe terceiro numero: ");
+	scanf("%d", &num);
+	
+	if (num < menor){
+		menor = num;
+	}
+	
+	printf("Menor valor: %d", menor);
+	
+	
+	
+	return 0;
+}
