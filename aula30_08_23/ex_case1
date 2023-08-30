@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+	
+	float altura;
+	char genero;
+	
+	printf("Informe a altura: ");
+	scanf("%f", &altura);
+	
+		printf("Informe o genero: ");
+	scanf(" %c", &genero);
+	
+	switch(genero){
+		case 'M': printf("Peso ideal: %.1f", 72.7 * altura - 58); break;
+		case 'F': printf("Peso ideal: %.1f", 62.1 * altura - 47.7); break;
+		default: printf("GENERO invalido");
+	}
+	
+	return 0;
+}
+
