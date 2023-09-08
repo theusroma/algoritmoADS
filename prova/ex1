@@ -1,0 +1,27 @@
+// Faça um programa que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idadedessa pessoa expressa em dias. Considerar ano com 365 dias e mês com 30 dias.
+#include <stdio.h>
+
+int main() {
+    
+    int anos, meses, dias, total;
+    
+    printf("Digite sua idade em anos");
+    scanf("%d", &anos);
+    
+    anos = anos * 365;
+    
+    printf("Digite sua idade em meses");
+    scanf("%d", &meses);
+    
+    meses = meses + 30;
+    
+    printf("Digite sua idade em dias");
+    scanf("%d", &dias);
+    
+    dias = dias * 1;
+    
+    total = dias * meses * anos;
+    
+    printf("Sua idade em dias é: %d", total);
+    return 0;
+}
