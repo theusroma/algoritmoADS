@@ -1,0 +1,27 @@
+//Escreva um programa que receba o valor do salário de uma pessoa e o valor de um financiamento pretendido. Caso o financiamento seja menor ou igual a 5 vezes o salário da pessoa, o programadeverá escrever "Financiamento Concedido"; senão, ele deverá escrever "Financiamento Negado". Independente de conceder ou não o financiamento, o programa escreverá depois a frase "Obrigadopor nos consultar!"
+
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    
+    int salario, financiamento;
+    
+    printf("Qual seu salário? ");
+    scanf("%d", &salario);
+    
+    printf("Qual o financiamento pretendido? ");
+    scanf("%d", &financiamento);
+    
+    if(financiamento <= salario * 5){
+        printf("Financiamento concedido");
+    }
+    
+    else{
+        printf("Financiamento negado");
+    }
+
+printf("\n Obrigado por nos consultar!");
+
+    return 0;
+}
