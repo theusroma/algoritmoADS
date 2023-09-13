@@ -1,0 +1,15 @@
+//Escreva um algoritmo que mostre os números múltiplos de 5, no intervalo de 1 até 100.
+
+#include <stdio.h>
+
+int main(){
+    
+    int num;
+    
+    for(num = 0; num <= 100; num += 5){
+        printf("%d \n", num);
+    }
+    
+    
+    return 0;
+}
