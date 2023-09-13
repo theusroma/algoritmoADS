@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+int main(){
+	
+	
+	int num;
+	
+	num = 0;
+	
+	do{
+	    printf("%d \n", num);
+	    num = num + 5;
+	}
+	while(num <= 100);
+	
+	
+	
+	
+	
+	return 0;
+}
