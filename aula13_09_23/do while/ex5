@@ -1,0 +1,19 @@
+/* Escreva um algoritmo que mostre todos os números pares existentes entre 1 e um número lido do teclado, bem como a quantidade de números apresentados. */
+
+#include <stdio.h>
+
+int main() {
+  
+    int num, digi;
+    
+    printf("Digite um número: ");
+    scanf("%d", &digi);
+
+    do{
+        num = num + 2;
+        printf("%d \n", num);
+    }
+    while(num <= digi - 2);
+
+ return 0;
+}
