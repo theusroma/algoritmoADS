@@ -1,0 +1,28 @@
+/* Escreva um algoritmo que some os números fornecidos pelo usuário até que o número lido seja iguala zero. Ao final, mostre o resultado da soma. */
+
+
+#include <stdio.h>
+
+int main() {
+  
+    int num1, num2, digi;
+    
+    do{
+        printf("Digite um número: ");
+        scanf("%d", &num1);
+        
+        printf("Digite um número: ");
+        scanf("%d", &num2);
+        
+        digi = num1 + num2;
+        
+        printf("%d \n", digi);
+        
+        
+    }
+    while(digi != 0);
+    
+  
+ 
+    return 0;
+}
