@@ -1,0 +1,18 @@
+/* Escreva um algoritmo que mostre na tela a soma obtida dos 100 primeiros números inteiros (1 + 2 + 3+ 4 + 5 + ... + 100). Resultado: 5050 */
+
+#include <stdio.h>
+
+int main() {
+  
+    int num, soma;
+
+    while(num <= 99){
+        
+        num = num + 1;
+        soma = soma + num;
+    }
+
+    printf("%d \n", soma);
+ 
+    return 0;
+}
