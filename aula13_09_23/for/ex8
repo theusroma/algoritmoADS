@@ -1,0 +1,40 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int num, total, resultado, comeca, termina;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    printf("Onde você quer que a tabuada comece: ");
+    scanf("%d", &comeca);
+
+    printf("Onde você quer que a tabuada termine:");
+    scanf("%d", &termina);
+    
+    printf("Mostrar a tabuada de: %d \n\nComeça por: %d \n\nTermina em: %d\n", num, comeca, termina);
+    
+    for(total = comeca; total <= termina; total = total + 1){
+        
+        resultado = num * total;
+        
+        printf("\n%d x %d = %d", num, total, resultado);
+        
+       
+    }
+     
+    
+    
+    
+    
+    
+    //do{
+     //   num = num * num + 1;
+     //   printf("\n %d", num);
+  //  }
+  //  while(num <=10);
+
+    return 0;
+}
