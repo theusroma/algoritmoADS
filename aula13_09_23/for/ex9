@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int num, celsius;
+    float fahrenheint;
+    
+    
+
+    
+    for(num = 0; num <= 100; num = num + 5){
+        
+        printf("\nGraus Celsius: %d | Graus Fahrenheint: %.1f", num, fahrenheint = num * 1.8 + 32);
+        
+       
+    }
+
+
+    return 0;
+}
