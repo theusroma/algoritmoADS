@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int num, total, resultado;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    for(total = 1; total <= 10; total = total + 1){
+        
+        resultado = num * total;
+        printf("\n%d x %d = %d", num, total, resultado);
+    }
+    
+    
+    
+    
+    
+    //do{
+     //   num = num * num + 1;
+     //   printf("\n %d", num);
+  //  }
+  //  while(num <=10);
+
+    return 0;
+}
