@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int esfera, limpeza, conector, quebrado, todos;
+    float total;
+    
+    esfera = 0;
+    limpeza = 0;
+    conector = 0;
+    quebrado = 0;
+    
+    do{
+        printf("\n[1] Necessita da esfera.");
+        printf("\n[2] Necessita de limpeza.");
+        printf("\n[3] Necessita troca de cabo ou conector.");
+        printf("\n[4] Quebrado ou inutilizado.\n");
+        scanf("%d", &todos);
+        
+        switch(todos){
+            case 1: esfera++;break;
+            case 2: limpeza++;break;
+            case 3: conector++;break;
+            case 4: quebrado++;break;
+        }
+        
+    }while(todos != 0);
+    
+    total = esfera + limpeza + conector + quebrado;
+    
+    printf("Quantidade de mouses: %.f \n", total);
+    
+    printf("\nNecessita de esfera: %d (%.f%)", esfera, esfera / total * 100);
+    
+    printf("\nNecessita de limpeza: %d (%.f%)", limpeza, limpeza / total * 100);
+    
+    printf("\nNecessita de troca de cabo ou conector: %d (%.f%)", conector, conector / total * 100);
+    
+    printf("\nQuebrado ou inutilizado: %d (%.f%)", quebrado, quebrado / total * 100);
+            
+        return 0;
+    
+}
