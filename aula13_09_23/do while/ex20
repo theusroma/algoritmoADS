@@ -1,4 +1,7 @@
-// Escreva um algoritmo que verifique a validade de uma senha fornecida pelo usuário (a senha válida éo número 2009). Se a senha informada pelo usuário for inválida, a mensagem "ACESSO NEGADO" deveser mostrado na tela e deve ser solicitada uma nova senha até que ela seja válida. Caso contrário deveser mostrado na tela a mensagem "ACESSO PERMITIDO" junto com um número de vezes que a senhafoi informada.
+// Escreva um algoritmo que verifique a validade de uma senha fornecida pelo usuário (a senha válida éo número 2009). Se a senha
+informada pelo usuário for inválida, a mensagem "ACESSO NEGADO" deveser mostrado na tela e deve ser solicitada uma nova senha até 
+que ela seja válida. Caso contrário deveser mostrado na tela a mensagem "ACESSO PERMITIDO" junto com um número de vezes que a senha
+foi informada.
 #include <stdio.h>
 
 int main() {
