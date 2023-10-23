@@ -1,0 +1,33 @@
+//Escreva um programa que alimente um vetor com 5 números e calcule a média destes valores. Na sequência, apresente na tela os valores que são iguais ou superiores à média.
+#include <stdio.h>
+
+int main() {
+    
+    float vetor[5], media, soma;
+    int contador;
+    
+    soma = 0;
+    
+    for(contador = 0; contador < 5; contador = contador + 1){
+        printf("Escreva número: ");
+        scanf("%f", &vetor[contador]);
+    }
+    
+    
+    for(contador = 0; contador < 5; contador = contador + 1){
+       soma = soma + vetor[contador];
+    }
+    
+    media = soma / 5;
+    
+  printf("A média é: %.2f", media);
+
+    for(contador = 0; contador < 5; contador = contador + 1){
+        if(vetor[contador] >= media){
+            printf("\nElementos: %.2f", vetor[contador]);
+        }
+    }
+        
+     
+    return 0;
+}
