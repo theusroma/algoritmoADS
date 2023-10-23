@@ -1,0 +1,20 @@
+//Escreva um programa que armazene 5 números em um vetor e apresente uma listagem contendo oíndice do elemento e uma das mensagens: par ou ímpar.
+#include <stdio.h>
+
+int main() {
+    
+   int vetor[5] = {1, 2, 3, 4, 5}, contador;
+   
+   for(contador = 0; contador < 5; contador++){
+       printf("\nÍndice %d: %d", contador, vetor[contador]);
+   }
+   
+       if(vetor[contador] % 2 == 0){
+          printf("\n par");
+       }
+       else{
+           printf("\n impar");
+       }
+     
+    return 0;
+}
