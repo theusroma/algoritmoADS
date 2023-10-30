@@ -1,0 +1,48 @@
+/*Crie uma estrutura representando um aluno de uma disciplina. Essa estrutura deve conter o nome do aluno,
+o nome da disciplina e as notas do aluno em duas provas. Em seguida, leia os dados de três alunos e os armazena nessa estrutura. 
+Por fim, exiba o nome do aluno, o nome da disciplina e a média dos alunos que foram aprovados com média igual ou superior a 6. */
+
+#include <stdio.h>
+#include <locale.h>
+ 
+ 
+ struct Aluno{
+ 	char nome[31], disciplina[21];
+ 	float nota1, nota2;
+};
+ 
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+
+	struct Aluno aluno[3];
+	int i;
+	float media;
+	
+	for(i = 0; i < 3; i++){
+		printf("Informe nome: ");
+		scanf(" %30[^\n]", aluno[i].nome);
+		
+		printf("Informe disciplina: ");
+		scanf(" %30[^\n]", aluno[i].disciplina);
+		
+		printf("Informe nota 1: ");
+		scanf("%f", &aluno[i].nota1);
+		
+		printf("Informe nota2: ");
+		scanf("%f", &aluno[i].nota2);
+	}
+	
+	for(i = 0; i < 3; i++){
+		
+		media = (aluno[i].nota1 + aluno[i].nota2) / 2;
+		
+		if(media >= 6){
+			printf("\nNome: %s", aluno[i].nome);
+			printf("\nDisciplina: %s", aluno[i].disciplina);
+			printf("\nNota: %.1f", media);
+		}
+	}
+	
+	return 0;
+}
