@@ -1,0 +1,45 @@
+Escreva um programa que declare uma matriz de 3 x 3 para armazenar números inteiros. O programa deverá solicitar ao usuário para preencher todas as posições da matriz
+e, então apresentar na tela se a soma dos elementos da diagonal principal é menor, igual ou maior que a soma dos elementos da diagonal secundária.
+
+#include <stdio.h>
+#include <locale.h>
+ 
+ 
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	int matriz[3][3], i, j, soma_principal, soma_secundaria;
+	
+	for(i = 0; i < 3; i++){
+		for(j = 0; j < 3; j++){
+			printf("Informe número [%d][%d]: ", i, j);
+			scanf("%d", &matriz[i][j]);
+		}
+	}
+	
+	/* Somas (versão 1) */
+	soma_principal = 0;
+	soma_secundaria = 0;
+	
+	for(i = 0; i < 3; i++){
+		soma_principal = soma_principal + matriz[i][i];
+		soma_secundaria = soma_secundaria + matriz[i][2 - i];
+	}
+	
+	/* Somas (versão 2) */
+	soma_principal = matriz[0][0] + matriz[1][1] +matriz[2][2];
+	soma_secundaria = matriz[0][2] + matriz[1][1] +matriz[2][0];
+	
+	if(soma_principal > soma_secundaria){
+		printf("Soma diagonal principal é maior.");
+	}
+	else if(soma_principal < soma_secundaria){
+		printf("Soma diagonal secundaria é maior.");
+	}
+	else{
+		printf("As somas são iguais.");
+	}
+	
+	return 0;
+}
