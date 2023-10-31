@@ -1,0 +1,45 @@
+// Suponha que você está fazendo uma pesquisa de preços para a compra de um tablet. Para auxiliá-lo,escreva um programa que permita o cadastro de cinco registros, cada um contendo o nome de uma loja e o preço do tablet naquela loja. O programa deve calcular a média dos preços e mostrar uma relação contendo o nome das lojas que tenham o tablet com preço abaixo da média
+#include <stdio.h>
+#include <locale.h>
+
+    struct Lojas{
+        char nome[30];
+        float preco;
+    };
+
+int main() {
+    
+    setlocale(LC_ALL, "Portuguese");
+    
+    struct Lojas loja[5];
+    int i;
+    float media, preco;
+    
+
+    
+    for(i = 0; i < 5; i++){
+    printf("Digite o nome da loja: ");
+    scanf(" %30[^\n]", loja[i].nome);
+    
+    printf("\nDigite o preço do tablet: ");
+    scanf("%f", &loja[i].preco);
+}
+
+    
+
+   for(i = 0; i < 5; i++){
+        
+        media = (loja[1].preco + loja[2].preco + loja[3].preco + loja[4].preco + loja[5].preco) / 5;
+        
+        if(media >= loja[i].preco){
+            printf("\n%s", loja[i].nome);
+            printf("\n%.2f", loja[i].preco);
+        
+      }
+   }
+    
+    
+
+    return 0;
+
+}
