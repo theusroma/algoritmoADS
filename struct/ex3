@@ -1,0 +1,74 @@
+/*Crie uma estrutura representando um atleta. Essa estrutura deve conter o nome do atleta, seu esporte, idade e altura. Em seguida, leia os dados de 5 atletas. Calcule e exiba os nomes do atleta mais alto e do atleta mais velho. */
+
+#include <stdio.h>
+#include <locale.h>
+ 
+ struct Atletas{
+     char nome[31];
+     char esporte[31];
+     float altura;
+     int idade;
+ };
+ 
+int main(){
+    
+    setlocale(LC_ALL, "Portuguese");
+    
+    struct Atletas atleta[5];
+    int i, idade, maisvelho;
+    float altura, maisalto;
+    
+    for(i = 0; i < 5; i++){
+        printf("Nome do atleta: ");
+        scanf(" %30[^\n]", atleta[i].nome);
+        
+        printf("Esporte do atleta: ");
+        scanf(" %30[^\n]", atleta[i].esporte);
+        
+        printf("Idade do atleta: ");
+        scanf("%d", &atleta[i].idade);
+        
+        printf("Altura do atleta: ");
+        scanf("%f", &atleta[i].altura);
+        
+    }
+    
+    
+    //calcula pra ver quem é o mais alto
+    maisalto = atleta[0].altura;
+    
+        for(i = 1; i < 5; i++){
+		if(atleta[i].altura > maisalto){
+			maisalto = atleta[i].altura;
+		}
+	}
+	
+	//calcula pra ver quem é o mais velho
+	maisvelho = atleta[0].idade;
+    
+        for(i = 1; i < 5; i++){
+		if(atleta[i].idade > maisvelho){
+			maisvelho = atleta[i].idade;
+		}
+	}
+	
+	
+	
+    printf("\nAtleta mais alto:\n");
+        for(i = 0; i < 5; i++){
+        if(atleta[i].altura == maisalto){
+        printf("%s\n", atleta[i].nome);
+            
+        }
+    }
+    
+    printf("\nAtleta mais velho:\n");
+        for(i = 0; i < 5; i++){
+        if(atleta[i].idade == maisvelho){
+        printf("%s\n", atleta[i].nome);
+            
+        }
+    }
+	    
+	return 0;
+}
