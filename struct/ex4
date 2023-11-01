@@ -1,0 +1,43 @@
+// Crie uma estrutura com o código e a quantidade em estoque de 5 produtos. Em seguida, leia um pedido composto por um código de produto e quantidade. Se houver quantidade suficiente para atender ao pedido integralmente, atualize a quantidade em estoque do produto e apresente a mensagem "Estoque atualizado", caso contrário, apresente a mensagem "Quantidade insuficiente em estoque".
+#include <stdio.h>
+#include <locale.h>
+
+    struct Estoque{
+        int codigo, quantidade;
+    };
+
+int main() {
+    
+    setlocale(LC_ALL, "Portuguese");
+    
+    struct Estoque produto[5] = {{1, 100}, {2, 100}, {3, 100}, {4, 100}, {5, 100}};
+        
+        int i, codigo, quantidade, resto;
+    
+
+    printf("Informe o código do produto: ");
+    scanf("%d", &codigo);
+    
+    printf("Informe a quantidade do pedido: ");
+    scanf("%d", &quantidade);
+    
+    resto = produto[i].quantidade - quantidade; 
+    
+    for(i = 0; i < 5; i++){
+        if(produto[i].codigo == codigo){
+            if(produto[i].quantidade + 1 > quantidade){
+                printf("Produto: %d Estoque atualizado: %d", produto[i].codigo, resto);
+            }
+            
+            
+            
+            else{
+                printf("Quantidade insuficiente em estoque.");
+            }
+        }
+    }
+    
+    
+    return 0;
+
+}
