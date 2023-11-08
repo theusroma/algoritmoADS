@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+    #vermelho{
+        color: red;
+    }
+
+    #topo{
+        text-align: center;
+    }
+
+    #sinais{
+        font-size: 40px;
+        color: red;
+    }
+
+    #caixa{
+        color: white;
+        padding: 25px;
+        background-color: red;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #botao{
+        padding: 20px;
+    }
+
+    #botaoo{
+        padding: 20px;
+    }
+
+    #centro{
+        text-align: center;
+    }
+ 
+ 
+    </style>
+</head>
+
+<body>
+    <div id="centro"><img id="topo" src="topo.png" alt="topo" width="500"></div>
+    <p>
+        <h1 id="sinais"> Sinais de Trânsito que todo motorista precisa conhecer</h1>
+    </p>
+
+    <p>
+        Segundo o art. 87 do Código de Trânsito Brasileiro (CTB), existem 6 tipos de sinais de trânsito: sinais
+        verticais, sinais horizontais, sinais semafóricos, sinais de obras, sinais sonoros e dispositivos auxiliares.
+        Cada um tem sua importância e significado.
+    </p>
+
+    <p>
+        <h2 id="vermelho"> 1 - Sinais verticais</h1>
+    </p>
+
+    <p>
+        Os sinais verticais são as placas postas nas laterais ou acima das vias de trânsito, que transmitem mensagens
+        zaos condutores. Essas mensagens podem ser permanentes e variáveis.
+    </p>
+
+
+    <p>
+        <h2 id="vermelho"> 2 - Sinais horizontais</h1>
+    </p>
+
+    <p>
+        Os sinais horizontais são as sinalizações pintadas nas vias públicas e particulares de trânsito. Essa
+        sinalização pode ser em formato de símbolos ou faixas.
+    </p>
+
+    <p>
+        <h2 id="vermelho"> 3 - Sinais semafóricos</h1>
+    </p>
+    <p>
+        Há dois tipos de sinais semafóricos (por vezes chamados de sinais luminosos), sendo semáforos de sinalização e
+        semáforos de advertência.
+    </p>
+
+    <p>
+        Os semáforos de sinalização são os mais comuns, é por eles que o fluxo de veículos e pedestres é controlado. É
+        através do semáforo de sinalização que ocorre a alteração de direito de passagem.
+    </p>
+
+    <p>
+        O semáforo de sinalização que controla o fluxo de automóveis é composto por três cores. Já o semáforo que
+        controla o fluxo de pedestres é composto por duas: verde e vermelho.
+    </p>
+
+    <p>
+        Os semáforos de advertência podem ser visto com mais frequência em estradas. Esses, por sua vez, têm a função de
+        alertar os condutores sobre a existência de obstáculos ou situações perigosas que precisem de atenção redobrada.
+    </p>
+
+    
+    
+
+    <p>
+        <h2 id="vermelho"> 4 - Sinais de obras</h1>
+    </p>
+    <p>
+        Os sinais de obras no trânsito podem ser feitos por sinalização vertical, horizontal, semafórica, sonoros, por
+        gestos e por dispositivos auxiliares que identifiquem o caráter temporário da obra naquela via.
+    </p>
+
+    <p>
+        <h2 id="vermelho"> 5 - Sinais sonoros</h1>
+    </p>
+    <p>
+        Algumas pessoas confundem buzinas e sirenes como sinais sonoros, e apesar desses sons serem uma forma de se
+        comunicar no trânsito, não é disso que se trata o sinal sonoro.
+    </p>
+
+    <p>
+        O sinal sonoro é feito por apito usado por agentes de trânsito. Esse método é mais usado quando os semáforos
+        deixam de funcionar, ou quando há algum acidente na via.
+    </p>
+
+ 
+        <p>
+            <h2 id="vermelho"> 6 - Dispositivos auxiliares</h1>
+        </p>
+        <p>
+        Dispositivos auxiliares são recursos físicos de diferentes cores, tamanhos e formatos, colocados nas vias e em
+        obstáculos que estejam interferindo no fluxo de veículos.
+    </p>
+
+    <p>
+        Os dispositivos auxiliares, diferentes das outras sinalizações de trânsito, não têm uma forma padrão e por vezes
+        podem ser de uso temporário. Os cones, por exemplo, são dispositivos auxiliares e são usados apenas quando a
+        necessidade realmente existe.
+    </p>
+
+    <p id="caixa">Desenvolvimento Web Básico - 2023</p>
+
+
+    <div id="centro">
+        <img src="verde.png" alt="" width="15%" id="trocar">
+        <br>
+        <button id="botaoo" onclick="trocar()">clicar</button>
+
+    </div>
+
+    <script>
+
+        let imagem = document.getElementById('trocar');
+        let status = 'verde';
+
+        function trocar(){
+            if(status == 'verde'){
+                imagem.src = "amarelo.png";
+                status = 'amarelo';
+            }
+            else if (status == 'amarelo'){
+                imagem.src = "vermelho.png";
+                status = 'vermelho';
+            }
+            else{
+                imagem.src = 'verde.png';
+                status = 'verde';
+            }
+
+
+        }
+
+        
+        
+        
+    </script>
+
+</body>
+
+
+</html>
