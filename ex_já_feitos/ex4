@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+int soma(int m[2][3]){
+	
+	int resultado = 0;
+	
+	for(int i = 0; i < 2; i++){
+		for(int j = 0; j < 3; j++){
+		
+		
+		resultado += m[i][j];
+	}
+}
+	
+	return resultado;
+}
+
+int main (){
+	
+	int matriz[2][3] = {{0, 1, 3}, {2, 4, 5}};
+	
+	printf("Resultado: %d", soma(matriz));
+	
+	return 0;
+}
