@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <locale.h>
+
+int s;
+
+int teste(int num){
+	
+	s = num * 2;
+	
+	return s;
+	
+}
+
+int main (){
+	
+	setlocale(LC_ALL, "Portuguese");
+
+	
+	printf("Resultado inicial: %d", teste(5));
+	
+	s++
+
+	return 0;
+}
