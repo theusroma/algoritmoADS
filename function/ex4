@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int absoluto(int numero){
+    
+    int num;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    if(num < 0){
+    
+    num = num * -1;
+    
+    printf("O número absoluto é: %d", num);
+}
+    else{
+        printf("O número absoluto é: %d", num);
+    }
+}
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+		
+	    absoluto(2);
+		
+	return 0;
+}
