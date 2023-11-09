@@ -1,0 +1,39 @@
+/* Escreva uma função que retorne o maior valor entre dois números inteiros*/
+
+#include <stdio.h>
+#include <locale.h>
+
+
+int diferenca(){
+    
+    int num1, num2, soma;
+    
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+    
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+    
+    
+
+       if(num1 > num2){
+           
+           soma = num1;
+               
+           printf("O maior valor é: %d", soma);
+       }
+       
+       else {
+           printf("O maior valor é: %d", num2);
+       }
+  
+}
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+		
+	    diferenca();
+		
+	return 0;
+}
