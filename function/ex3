@@ -1,0 +1,46 @@
+/*Modifique a função "linha" da atividade anterior de tal forma que a quantidade de asteriscos seja um argumento da mesma.*/
+
+
+#include <stdio.h>
+#include <locale.h>
+
+//void para função sem retorno e para funções que necessitam de retorno, precisa declarar
+//que tipo de retorno é (int, float, char...)!
+
+void linha(){
+	
+	for(int i = 0; i < 19; i++){
+		
+		printf("*");
+		
+	}
+}
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	linha();
+	
+	printf("\n");
+	
+	printf("Número entre 1 e 5:");
+	
+	printf("\n");
+	
+	linha();
+	
+	printf("\n");
+	
+	for(int i = 1; i <= 5; i++){
+		
+		printf("%d\n", i);
+		
+	}
+	
+	printf("\n");
+	
+	linha();	
+		
+	return 0;
+}
