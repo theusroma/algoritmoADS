@@ -1,0 +1,69 @@
+/*Escreva uma função que receba uma letra e 3 notas de um aluno. Se a letra for A, a função deve retornar a média aritmética das
+ notas do aluno e se a letra for P, a função deve retornar a sua médiaponderada com os pesos 5, 3 e 2 respectivamente.*/
+ 
+ 
+ #include <stdio.h>
+ #include <locale.h>
+ 
+ int a(){
+ 	
+ 	char decisao;
+ 	float nota1, nota2, nota3, m;
+ 	float ponderada1, ponderada2, ponderada3, pond;
+ 	
+ 	printf("Aluno 'a' ou 'p'");
+ 	scanf(" %c", &decisao);
+ 	
+ 	printf("Digite a primeira nota: ");
+ 	scanf("%f", &nota1);
+ 	
+ 	printf("Digite a segunda nota: ");
+ 	scanf("%f", &nota2);
+ 	
+ 	printf("Digite a terceira nota: ");
+ 	scanf("%f", &nota3);
+ 	
+ 	if(decisao == 'a'){
+ 	
+ 	m = nota1 + nota2 + nota3;
+ 	
+ 	printf("%.2f", m / 3);
+ 		
+	 } 	
+	 
+	 else{
+ 	printf("Digite a primeira nota: ");
+ 	scanf("%f", &nota1);
+ 	
+ 	printf("Digite a segunda nota: ");
+ 	scanf("%f", &nota2);
+ 	
+ 	printf("Digite a terceira nota: ");
+ 	scanf("%f", &nota3);
+ 	
+ 	m = nota1 + nota2 + nota3;
+ 	
+ 	printf("caralho");
+	 	
+	 }
+ 	
+ }
+ 
+  int p(float ponderada){
+ 	
+ }
+ 
+ int main(){
+ 	
+ 	
+ 	
+ 	
+ 	a();
+ 	
+ 	
+ 	
+ 	return 0;
+ }
+ 
+ 
+ 
