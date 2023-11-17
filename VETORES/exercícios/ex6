@@ -1,54 +1,45 @@
 //Escreva um programa que alimente um vetor com 5 números. Apresente na tela o menor valor do vetor, o maior valor do vetor, a soma dos valores do vetor e a média dos valores do vetor
+
 #include <stdio.h>
 
-int main() {
+int main(){
     
-    float vetor[5], media, soma, total;
-    int contador, maior, menor;
+    int i, vetor[5], maior = vetor[i], menor, aux;
+    float media, soma;
     
-    soma = 0;
-    menor = vetor[contador];
-    maior = vetor[contador];
     
-    /*Alimenta o vettor*/
-    for(contador = 0; contador < 5; contador = contador + 1){
-        printf("Escreva número: ");
-        scanf("%f", &vetor[contador]);
+    for(i = 0; i < 5; i++){
+        printf("Digite o número: ");
+        scanf("%d", &vetor[i]);
     }
     
-    /*Apresenta a média*/
-    for(contador = 0; contador < 5; contador = contador + 1){
-       soma = soma + vetor[contador];
+    for(i = 0; i < 5; i++){
+        soma = soma + vetor[i];
+    }
+    
+    for(i = 0; i < 5; i++){
+        if(maior < vetor[i]){
+            maior = vetor[i];
+        }
+    }
+    
+    menor = vetor[0];
+    
+    for(i = 0; i < 5; i++){
+        if(vetor[i] < menor){
+            menor = vetor[i];
+        }
     }
     
     media = soma / 5;
     
-  printf("A média é: %.2f", media);
-
-/*Apresenta a soma*/
-        
-        total = vetor[0] + vetor[1] + vetor[2] + vetor[3] + vetor[4];
-        
-            printf("\n\n\n\n A soma é: %.2f", total);
-   
-            
-            /*apresenta o menor valor*/
-            if(vetor[contador] < menor){
-                menor = vetor[contador];
-            }
-            printf("\n\nO menor valor é: %d", menor);
-
-        
-            
-            /*Apresenta o maior valor*/
-            
-
-            if(vetor[contador] > maior){
-                maior = vetor[contador];
-            }
-            printf("\n\nO maior valor é: %d", maior);
-            
-        
-     
+    printf("\nMenor valor: %d", menor);
+    printf("\nMaior valor: %d", maior);
+    printf("\nSoma: %.2f", soma);
+    printf("\nMédia: %.2f", media);
+    
+    
+    
+    
     return 0;
 }
