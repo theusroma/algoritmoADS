@@ -2,19 +2,20 @@
 #include <stdio.h>
 
 int main() {
-    
-    int contador, vetor[5];
-    
-    /*Alimenta o vetor*/
-    for(contador = 0; contador < 5; contador = contador + 1){
-        printf("Escreva número: ");
-        scanf("%d", &vetor[contador]);
+   
+   int i;
+   int vetor[5];
+   
+    for(i = 0; i < 5; i++){
+        printf("Digite um número: ");
+        scanf("%d", &vetor[i]);
     }
     
-    /*Mostra os elementos do vetor*/
-    for(contador = 4; contador >= 0; contador = contador - 1){
-        printf("Elementos: %d\n", vetor[contador]);
+    for(i = 4; i >= 0; i--){
+        printf("%d ", vetor[i]);
     }
+
+
 
     return 0;
 }
