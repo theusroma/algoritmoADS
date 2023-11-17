@@ -1,25 +1,22 @@
 //Escreva um programa que alimente um vetor com 5 números inteiros. Apresente na tela apenas os valores ímpares que aparecem no vetor
+//mostre só os ímpares
 #include <stdio.h>
 
 int main() {
     
-    int contador, vetor[5];
+    int i;
+    int vetor[5];
     
-    /*Alimenta o vetor*/
-    for(contador = 0; contador < 5; contador = contador + 1){
-        printf("Escreva número: ");
-        scanf("%d", &vetor[contador]);
+    for(i = 0; i < 5; i++){
+        printf("Digite um número: ");
+        scanf("%d", &vetor[i]);
     }
     
-    /*Mostra os elementos do vetor*/
-    for(contador = 0; contador < 5; contador = contador + 1){
-        if(vetor[contador] % 2 != 0){
-        printf("\nElementos: %d", vetor[contador]);
+    for(i = 0; i < 5; i++){
+        if(vetor[i] % 2 != 0){
+        printf("Elementos: %d ", vetor[i]);
     }
 }
-
-
-
-printf("\n\n\n\nDeu certo!!!");
-    return 0;
+    
+   return 0;
 }
