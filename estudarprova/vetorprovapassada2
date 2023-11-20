@@ -1,0 +1,25 @@
+/*Escreva um programa que declare um vetor para armazenar 5 números inteiros informados pelo usuário. Em seguida, troque o primeiro elemento pelo último elemento do vetor. Apresente o vetor atualizado na tela.*/
+
+#include <stdio.h>
+
+int main(){
+    
+    int i, aux, v[5];
+    
+    
+    for(i = 0; i < 5; i++){
+        printf("Digite um numero: ");
+        scanf("%d", &v[i]);
+    }
+    
+    for(i = 0; i < 5; i++){
+        
+        aux = v[0];
+        v[0] = v[4];
+        v[4] = aux;
+        
+        printf("%d ", v[i]);
+    }
+   
+    return 0;
+}
