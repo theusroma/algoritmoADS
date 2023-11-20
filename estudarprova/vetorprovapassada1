@@ -1,0 +1,30 @@
+/*Escreva um programa que alimente um vetor com 5 números inteiros informados pelo usuário e copie o maior elemento para a última posição do vetor. Apresente o vetor atualizado na tela.*/
+
+#include <stdio.h>
+
+int main(){
+    
+    int i, maior, v[5];
+    
+    
+    for(i = 0; i < 5; i++){
+        printf("Digite o numero: ");
+        scanf("%d", &v[i]);
+    }
+    
+    maior = v[0];
+    
+    for(i = 1; i < 5; i++){
+        if(v[i] > maior){
+            maior = v[i];
+        }
+    }
+    
+    v[4] = maior;
+
+        for(i = 0; i < 5; i++){
+        printf("%d ", v[i]);
+    }
+    
+    return 0;
+}
