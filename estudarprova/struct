@@ -1,0 +1,36 @@
+//Escreva um programa que armazene em uma estrutura de registros o nome e o preço por quilo de cinco frutas. Calcule quantos quilos de cada fruta poderão ser adquiridos, individualmente, de acordo com um valor em reais informado pelo usuário.
+#include <stdio.h>
+
+    struct Frutaria{
+        char nome[31];
+        float preco;
+    };
+    
+int main(){
+    
+    struct Frutaria fruta[5];
+    float precoquilo, num, reais;
+    int i;
+    
+    for(i = 0; i < 5; i++){
+        printf("Digite o nome da fruta: ");
+        scanf(" %30[^\n]", fruta[i].nome);
+        
+        printf("Digite o preço da fruta: ");
+        scanf("%f", &fruta[i].preco);
+        
+    }
+    
+    printf("Quantos reais você tem para gastar? ");
+    scanf("%f", &reais);
+    
+    for(i = 0; i < 5; i++){
+        precoquilo = reais / fruta[i].preco;
+    
+    printf("\nVocê poderá comprar %.1f quilos de %s", precoquilo, fruta[i].nome);
+        
+        
+        
+    }
+    return 0;
+}
