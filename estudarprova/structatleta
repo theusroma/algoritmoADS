@@ -1,0 +1,55 @@
+/*Crie uma estrutura representando um atleta. Essa estrutura deve conter o nome do atleta, seu esporte, idade e altura. Em seguida, leia os dados de 5 atletas. Calcule e exiba os nomes do atleta maisalto e do atleta mais velho*/
+
+#include <stdio.h>
+
+    struct Atletas{
+        char nome[31];
+        char esporte[31];
+        int idade;
+        float altura;
+    };
+    
+    int main(){
+        
+        struct Atletas atleta[5] =
+        {{"Ana", "Basquete", 17, 1.83}, 
+        {"Beatriz", "Volei",19, 1.77},
+        {"Carlos", "Futebol", 34, 1.73},
+        {"Daniel", "Peteca", 39, 1.79},
+        {"Eduardo", "Futebol de salão", 29, 1.81}};
+        float auxx;
+        int aux, i;
+  
+            
+            aux = atleta[0].idade;
+            
+        for(i = 1; i < 5; i++){
+            if(atleta[i].idade > aux){
+                aux = atleta[i].idade;
+            }
+        }
+        
+        auxx = atleta[0].altura;
+        
+        for(i = 1; i < 5; i++){
+            if(atleta[i].altura > auxx){
+                auxx = atleta[i].altura;
+            }
+        }
+        
+        for(i = 0; i < 5; i++){
+            if(atleta[i].altura == auxx){
+            printf("%s\n", atleta[i].nome);
+            printf("%.2f\n", atleta[i].altura);
+        }
+        }
+        
+        for(i = 0; i < 5; i++){
+            if(atleta[i].idade == aux){
+            printf("%s\n", atleta[i].nome);
+            printf("%.d\n", atleta[i].idade);
+        }
+        }
+        
+        return 0;
+    }
