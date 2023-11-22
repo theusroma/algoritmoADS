@@ -16,7 +16,6 @@ int main(){
     int i;
     float litrosconsumidos, valorgasto, preco;
     
-    
     printf("informe o preço do combustivel: ");
     scanf("%f", &preco);
     
@@ -29,7 +28,5 @@ int main(){
         printf("Litros consumidos em 1000Km: %.2f\n", litrosconsumidos);
         printf("Valor gasto: %.2f\n", valorgasto);
     }
-    
-    
     return 0;
 }
