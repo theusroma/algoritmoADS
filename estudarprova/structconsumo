@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+struct Carros{
+    char modelo[31];
+    float consumo;
+};
+
+int main(){
+    
+    struct Carros carro[5] = 
+    {{"Gol", 13.3},
+    {"Mobi", 8.8},
+    {"Celta", 9.5},
+    {"Sandero", 9.9},
+    {"Kwid", 10.8}};
+    int i;
+    float litrosconsumidos, valorgasto, preco;
+    
+    
+    printf("informe o preço do combustivel: ");
+    scanf("%f", &preco);
+    
+    for(i = 0; i < 5; i++){
+        
+        litrosconsumidos = 1000 / carro[i].consumo;
+        valorgasto = litrosconsumidos * preco;
+        
+        printf("Modelo: %s\n", carro[i].modelo);
+        printf("Litros consumidos em 1000Km: %.2f\n", litrosconsumidos);
+        printf("Valor gasto: %.2f\n", valorgasto);
+    }
+    
+    
+    return 0;
+}
